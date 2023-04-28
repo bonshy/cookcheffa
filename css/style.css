@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+:root {
+    --rosa: rgb(247, 191, 200);
+    --fucsia: rgb(226, 82, 106);
+    --verde: rgb(102, 184, 126);
+    --verde2: rgb(63, 179, 88);
+    --azules: #008B8B;
+    --blanco: rgb(255, 255, 255);
+    --gris1: rgb(160, 158, 158);
+    --fondo: rgba(0, 0, 0, 0.50);
+    --fondo2: rgba(247, 191, 200, .75);
+}
+
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--rosa);
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: 'Pacifico', cursive;
+    line-height: 1.2;
+}
+
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Roboto', sans-serif;
+    color: var(--blanco);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+    color: var(--blanco);
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.5rem;
+}
+
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.header {
+    align-items: center;
+    background-image: url(https://elbauldemipsp.files.wordpress.com/2009/08/bd-precious-paper6.jpg?w=300);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.header-texto {
+    color: var(--blanco);
+    padding: 25px;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.logo-nombre {
+    font-weight: 300;
+}
+
+.logo-bold {
+    font-weight: 800;
+}
+
+
+.navegacion-enlace {
+    display: block;
+    text-align: center;
+    font-size: 3.2rem;
+    color: var(--blanco);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navegacion-enlace:hover,
+.logo h1:hover {
+    color: var(--fucsia);
+}
+
+@media(min-width: 768px) {
+    .navbar {
+        display: flex;
+        gap: 3rem
+    }
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada {
+    margin-bottom: 2rem;
+
+}
+
+.entrada:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.boton,
+.boton2 {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.boton2 {
+    width: 280px;
+}
+
+.entrada-contenido {
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        width: 700px;
+    }
+
+    .entrada-imagen {
+        width: 700px;
+    }
+
+    .entrada-contenido {
+        width: 700px;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.articulo {
+    color: var(--blanco);
+}
+
+.boton-primario {
+    background-color: var(--fucsia);
+}
+
+.boton-secundario {
+    background-color: var(--fucsia);
+}
+
+.cursos {
+    width: 280px;
+    padding: 0;
+    list-style: none;
+    border-bottom: 1px solid var(--fucsia);
+}
+
+.widget-curso {
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.widget-curso:last-of-type {
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-curso-label {
+    font-family: 'Roboto', sans-serif;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+.widget-curso-info {
+    font-family: 'Roboto', sans-serif;
+    color: var(--blanco);
+    font-weight: normal;
+}
+
+.widget-curso-label,
+.widget-curso-info {
+    font-size: 2rem;
+}
