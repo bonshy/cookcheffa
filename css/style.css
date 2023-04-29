@@ -29,6 +29,7 @@ body {
     background-color: var(--rosa);
 }
 
+
 .contenedor {
     width: min(90%, 120rem);
     margin: 0 auto;
@@ -134,6 +135,11 @@ a {
     font-weight: 800;
 }
 
+.logo-img {
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+}
 
 .navegacion-enlace {
     display: block;
