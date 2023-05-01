@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
@@ -9,7 +8,7 @@
     --azules: #008B8B;
     --blanco: rgb(255, 255, 255);
     --gris1: rgb(160, 158, 158);
-    --fondo: rgba(0, 0, 0, 0.50);
+    --fondo: rgba(0, 0, 0, 0.40);
     --fondo2: rgba(247, 191, 200, .75);
 }
 
@@ -33,6 +32,20 @@ body {
 .contenedor {
     width: min(90%, 120rem);
     margin: 0 auto;
+    text-align: center;
+}
+
+.contenedor2 {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+    .contenedor,
+    .contenedor2 {
+        text-align: center;
+    }
 }
 
 a {
@@ -40,11 +53,7 @@ a {
 }
 
 h1,
-h2 {
-    font-family: 'Pacifico', cursive;
-    line-height: 1.2;
-}
-
+h2,
 h3,
 h4,
 h5,
@@ -126,6 +135,14 @@ a {
     font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width: 768px) {
+    .logo h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+    }
+}
+
 
 .logo-nombre {
     font-weight: 300;
@@ -136,9 +153,16 @@ a {
 }
 
 .logo-img {
-    width:100px;
+    width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        display: none;
+    }
 }
 
 .navegacion-enlace {
@@ -159,6 +183,18 @@ a {
     .navbar {
         display: flex;
         gap: 3rem
+    }
+}
+
+@media(max-width: 768px) {
+    .navbar {
+        display: flex;
+        gap: 3rem
+    }
+
+    .navbar a {
+        font-size: 2rem;
+        text-align: center;
     }
 }
 
@@ -265,4 +301,66 @@ a {
 .widget-curso-label,
 .widget-curso-info {
     font-size: 2rem;
+}
+
+/*footer*/
+
+.contenedor3 {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--fucsia);
+    justify-content: center;
+}
+
+
+.desarrolladora {
+    margin: 0rem 13rem;
+    text-align: center;
+}
+
+.img-des {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.desarrolladora h4 {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+    .contenedor3 {
+        grid-template-columns: 1fr;
+    }
+
+    .desarrolladora {
+        margin: 0 2rem;
+        border-bottom: solid 1rem var(rosa);
+    }
+}
+
+/*Nosotros*/
+.ent-cont {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+    background-image: url(../img/productos-panaderia-perfectamente-organizados_23-2150168243.avif);
+    background-size: contain;
+    background-repeat: repeat;
+    background-color: var(--fondo);
+}
+
+.cuerpo {
+    flex: 1;
+    background-color: var(--fondo);
+    padding: 2rem;
+}
+
+/*entradas*/
+
+.lista {
+    text-decoration: none;
+    color: var(blanco);
+    font-family: 'Roboto', sans-serif;
 }
