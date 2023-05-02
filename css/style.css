@@ -3,13 +3,8 @@
 :root {
     --rosa: rgb(247, 191, 200);
     --fucsia: rgb(226, 82, 106);
-    --verde: rgb(102, 184, 126);
-    --verde2: rgb(63, 179, 88);
-    --azules: #008B8B;
     --blanco: rgb(255, 255, 255);
-    --gris1: rgb(160, 158, 158);
     --fondo: rgba(0, 0, 0, 0.40);
-    --fondo2: rgba(247, 191, 200, .75);
 }
 
 html {
@@ -439,6 +434,10 @@ a {
 
 .boton-contacto{
     background-color: var(--rosa);
+    color: var(--fucsia);
+}
+.boton-contacto:hover{
+    color:var(--blanco)
 }
 
 
