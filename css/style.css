@@ -111,9 +111,9 @@ a {
 
 .header {
     align-items: center;
-    background-image: url(https://elbauldemipsp.files.wordpress.com/2009/08/bd-precious-paper6.jpg?w=300);
+    background-image: url(../img/Banner\ rosa.jpg);
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     height: auto;
 }
@@ -142,7 +142,6 @@ a {
         margin-bottom: 1.5rem;
     }
 }
-
 
 .logo-nombre {
     font-weight: 300;
@@ -310,6 +309,7 @@ a {
         align-items: center;
     }
 }
+
 @media screen and (max-width: 768px) {
     .navbar {
         display: flex;
@@ -332,7 +332,6 @@ a {
 
 
 .desarrolladora {
-    margin: 0rem 13rem;
     text-align: center;
 }
 
@@ -372,4 +371,17 @@ a {
     flex: 1;
     background-color: var(--fondo);
     padding: 2rem;
+}
+
+.d-block {
+    height: 600px;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width:768px) {
+    .d-block {
+        width: auto;
+        height: auto;
+    }
+
 }
